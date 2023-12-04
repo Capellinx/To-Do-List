@@ -11,7 +11,7 @@
     This is a simple to-do list project developed by @capellinx using HTML, CSS, and JavaScript.
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://capellinx.github.io/ToDoList/">View Demo</a>
   </p>
 </div>
 
