@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://capellinx.github.io/ToDoList/">
   </a>
 
   <h3 align="center">To Do List 📌</h3>
@@ -16,7 +16,7 @@
 </div>
 
 
-<img src="images/capa.png" alt="Logo" width="80" height="80">
+<img src="assets/capa.png" alt="Logo">
 
 
 <!-- ABOUT THE PROJECT -->
@@ -66,7 +66,7 @@ The To-Do List project is a user-friendly web application designed to streamline
 
 Linkedin - [Lucas Capella](https://www.linkedin.com/in/lucas-capella-/) - capellaaa7@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Capellinx/ToDoList](https://capellinx.github.io/ToDoList/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
