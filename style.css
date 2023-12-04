@@ -1,0 +1,171 @@
+:root {
+    --bg-gray-primary: #e2e2e2;
+    --bg-gray-inputs: #ebebeb;
+    --bg-gray-itemToDo: #f1f3f5;
+    --bg-gray-black-itemToDo: #e2e2e2;
+    --bg-blue-primary: #3b5bdb;
+    --bg-blue-dark: #2f4bbb;
+    --bg-white: #ffffff;
+    --bg-span-red: #e40404;
+    --bg-span-green: #028302;
+    --bg-span-yellow: #f3a703;
+
+    --fc-blue-primary: #3b5bdb;
+    --fc-black-primary: #000000;
+    --fc-gray-primary: #808080;
+    --fc-white-primary: #ffffff;
+
+    --ff-roboto: 'Roboto', sans-serif;
+    
+    --wd-zoneContainer: 1140px;
+    
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--ff-roboto);
+    font-size: 1.6rem;
+    background-color: var(--bg-gray-primary);
+    overflow-x: hidden;
+}
+.main__container,
+.header__content {
+    max-width: var(--wd-zoneContainer);
+    margin: 0 auto;
+}
+.tasks__container,
+.form__container {
+    background-color: var(--bg-white);
+    margin-top: 5.0rem;
+    padding: 3.0rem;
+    border-radius: 1.0rem;
+}
+.title2 {
+    color: var(--fc-black-primary);
+    font-size: 2.5rem;
+}
+.input__box {
+    border: none;
+    background-color: var(--bg-gray-inputs);
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+.input__box:focus {
+    outline: none;
+}
+.header__container {
+    background-color: var(--bg-white);
+    width: 100%;
+}
+.header__content {
+    height: 8.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__title {
+    color: var(--fc-blue-primary);
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.header__input--search {
+    width: 70.0rem;
+}
+.form__input-container {
+    margin-top: 3.0rem;
+}
+.form__input--text {
+    width: 60%;
+}
+.form__input--priority {
+    width: 35%;
+    margin-left: 2.0rem;
+    color: var(--fc-gray-primary);
+}
+.form__button--add-task {
+    width: 100%;
+    margin-top: 3.0rem;
+    padding: 2.0rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--fc-white-primary);
+    border: none;
+    background-color: var(--bg-blue-primary);
+    border-radius: 1.0rem;
+    
+    cursor: pointer;
+}
+.form__button--add-task:hover {
+    background-color: var(--bg-blue-dark);
+}
+.tasks__list {
+    margin-top: 3.0rem;
+}
+.task__item {
+    background-color: var(--bg-gray-itemToDo);
+    border-radius: 1.0rem;
+    margin-top: 2.0rem;
+    padding: 1.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.task__item:hover {
+    background-color: var(--bg-gray-black-itemToDo);
+}
+.task-info__container {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.0rem;
+}
+.task-type {
+    display: block;
+    width: 1.0rem;
+    height: 1.0rem;
+    border-radius: 50%;
+}   
+.span-important {
+    background-color: var(--bg-span-yellow);
+}
+.span-urgent {
+    background-color: var(--bg-span-red);
+}
+.span-normal {
+    background-color: var(--bg-span-green);
+}
+.task__button--remove-task {
+    background: no-repeat center/contain url(./assets/trash-icon.svg) transparent;
+    border: none;
+    height: 2.0rem;
+    width:  2.0rem;
+    padding-right: 3.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .header__title {
+        padding-bottom: 1.0rem;
+    }
+    .header__input--search {
+        width: 100%;
+    }
+    .form__input-container {
+        display: flex;
+        flex-direction: column;     
+        gap: 3.0rem;
+        max-width: 865px;
+    }
+    .form__input--text {
+        width: 96%;
+    }
+    .form__input--priority {
+        margin-left: 0;
+        width: 100%;
+    }
+}
